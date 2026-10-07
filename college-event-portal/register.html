@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Register | Tarang 2026</title><meta name="description" content="Tarang 2026 – inter-college festival event portal.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head><body>
+<div id="siteHeader"></div>
+<main>
+<header class="page-head"><div class="wrap"><h1 style="font-size:clamp(2rem,6vw,3.5rem)">Register</h1><p class="sub">Fill in your details to secure your spot. This is a demo – nothing is sent.</p></div></header>
+<section><div class="wrap" style="max-width:760px">
+<form id="regForm" novalidate>
+ <div class="row"><div><label for="name">Student name</label><input id="name" autocomplete="name"><div class="err" id="nameErr"></div></div>
+ <div><label for="email">Email</label><input id="email" type="email" autocomplete="email"><div class="err" id="emailErr"></div></div></div>
+ <div class="row"><div><label for="phone">Phone number</label><input id="phone" inputmode="numeric" maxlength="10" placeholder="10 digits"><div class="err" id="phoneErr"></div></div>
+ <div><label for="college">College / Department</label><input id="college" placeholder="e.g. SVIT, CSE"><div class="err" id="collegeErr"></div></div></div>
+ <div class="row"><div><label for="year">Year of study</label><select id="year"><option value="">-- Select --</option><option>1st year</option><option>2nd year</option><option>3rd year</option><option>4th year</option><option>Postgraduate</option></select><div class="err" id="yearErr"></div></div>
+ <div><label for="event">Select event</label><select id="event"></select><div class="err" id="eventErr"></div></div></div>
+ <label>Participation</label><div class="inline"><label><input type="radio" name="mode" value="Individual" checked> Individual</label><label><input type="radio" name="mode" value="Team"> Team</label></div>
+ <div id="teamBox" hidden><label for="team">Team name</label><input id="team"><div class="err" id="teamErr"></div></div>
+ <div class="inline" style="margin:1rem 0 .2rem"><label><input type="checkbox" id="terms"> I agree to the festival terms and conditions.</label></div><div class="err" id="termsErr"></div>
+ <button class="btn primary" type="submit">Submit registration</button>
+</form>
+<div class="ok" id="success" role="status"></div></div></section>
+</main>
+<div id="siteFooter"></div>
+<button id="top" aria-label="Back to top">↑</button>
+<script src="js/events.js"></script><script src="js/script.js"></script><script src="js/registration.js"></script>
+</body></html>
